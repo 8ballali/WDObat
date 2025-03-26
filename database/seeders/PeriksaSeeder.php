@@ -26,6 +26,18 @@ class PeriksaSeeder extends Seeder
                 'catatan' => 'Periksa Pertama Lagi',
                 'biaya_periksa' => 60000
             ],
+            [
+                'id_pasien' => 5,
+                'id_dokter' => 1,
+                'catatan' => 'Periksa Terusan',
+                'biaya_periksa' => 65000
+            ],
+            [
+                'id_pasien' => 5,
+                'id_dokter' => 2,
+                'catatan' => 'Periksa Maning',
+                'biaya_periksa' => 65500
+            ]
             ];
         foreach($data as $d){
             Periksa::create([
